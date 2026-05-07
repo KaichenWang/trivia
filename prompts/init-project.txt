@@ -1,0 +1,25 @@
+create a react app for a mulitple choice quiz game. 
+
+use standard directory shape for React projects (for assets, data, etc.)
+
+It should have a localhost dev server to test
+
+use typescript
+
+Make it very mobile friendly
+
+The UI should be minimalist. Show a question and have mulitiple choices underneath. when a user makes a choice, show if right or wrong. Keep track of score in the UI. when answer is shown give open to go to next question. keep track of progress in local storage so progress can be maintained if page is refreshed. Each quiz and each question of each quiz should have unique url path. if browser enters on a page that has progress in local storage, ask to Restart Quiz or start where left off (if the quiz was 100% complete, show the previous score and option to Restart Quiz).
+
+Data: quizzes are stored in JSON files under a data/ directory. Example:
+
+{
+  "id": "5IH59-IeTsk",
+  "title": "Quiz 1"
+   [
+    {
+      "question": "What is the name for undesirable animals that are harmful?",
+      "answer": "Vermin",
+      "options": ["Vultures", "Vipers"]
+    },
+    ...
+}
