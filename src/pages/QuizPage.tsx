@@ -385,7 +385,12 @@ function QuizPage() {
         </div>
         <p className="muted">{progressLabel}</p>
         <p className="score">
-          Score: {score} | Time: {totalTimeLabel}
+          <span>Score: {score}</span>
+          {
+            timerMode !== 'zen' && (
+              <span> | Time: {totalTimeLabel}</span>
+            )
+          }
         </p>
 
         {completedResult ? (
