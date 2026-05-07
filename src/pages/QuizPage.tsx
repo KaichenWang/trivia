@@ -136,11 +136,13 @@ function QuizPage() {
     setSelectedOption('__timeout__')
     setShowResult(true)
 
+    const nextIndex = currentIndex + 1
+    const reachedEnd = nextIndex >= totalQuestions
     saveQuizProgress(quiz.id, {
-      currentIndex,
+      currentIndex: reachedEnd ? currentIndex : nextIndex,
       score,
       totalQuestions,
-      completed: false,
+      completed: reachedEnd,
       totalElapsedMs: updatedTotalElapsedMs,
       timerMode,
     })
@@ -321,11 +323,13 @@ function QuizPage() {
       setScore((prev) => prev + 1)
     }
 
+    const nextIndex = currentIndex + 1
+    const reachedEnd = nextIndex >= totalQuestions
     saveQuizProgress(quiz.id, {
-      currentIndex,
+      currentIndex: reachedEnd ? currentIndex : nextIndex,
       score: updatedScore,
       totalQuestions,
-      completed: false,
+      completed: reachedEnd,
       totalElapsedMs: updatedTotalElapsedMs,
       timerMode: timerMode ?? 'zen',
     })
