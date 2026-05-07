@@ -61,6 +61,32 @@ p {
   font-weight: 600;
 }
 
+.timer-wrap {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.timer-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.timer-track {
+  width: 100%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.timer-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #22c55e, #f59e0b, #ef4444);
+  transition: width 100ms linear;
+}
+
 .quiz-list {
   list-style: none;
   padding: 0;

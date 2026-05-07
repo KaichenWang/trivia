@@ -15,4 +15,6 @@ export interface QuizProgress {
   score: number
   totalQuestions: number
   completed: boolean
+  totalElapsedMs?: number
+  timerMode?: 'zen' | 'easy' | 'hard' | 'expert'
 }
