@@ -1,21 +1,372 @@
 {
-  "id": "Q8m2-nA71pL",
+  "id": "pvF9eYTxcm4",
   "title": "Quiz 2",
   "questions": [
     {
-      "question": "What is the capital of Japan?",
-      "answer": "Tokyo",
-      "options": ["Seoul", "Tokyo", "Osaka", "Kyoto"]
+      "number": 1,
+      "question": "In which movie would you find the Greek warrior Achilles?",
+      "answer": "Troy",
+      "options": ["300", "Hercules"]
     },
     {
-      "question": "Which language runs in a web browser?",
-      "answer": "JavaScript",
-      "options": ["Python", "C++", "JavaScript", "Go"]
+      "number": 2,
+      "question": "What is the capital city of Canada?",
+      "answer": "Ottawa",
+      "options": ["Toronto", "Montreal"]
     },
     {
-      "question": "How many minutes are in two hours?",
-      "answer": "120",
-      "options": ["60", "90", "120", "180"]
+      "number": 3,
+      "question": "What is the highest waterfall in the world?",
+      "answer": "Angel Falls",
+      "options": ["Niagara Falls", "Victoria Falls"]
+    },
+    {
+      "number": 4,
+      "question": "Which city is considered the largest wedding destination in the United States?",
+      "answer": "Las Vegas",
+      "options": ["Miami", "Honolulu"]
+    },
+    {
+      "number": 5,
+      "question": "Kesha appeared in which reality series before she became famous?",
+      "answer": "The Simple Life",
+      "options": ["American Idol", "The Hills"]
+    },
+    {
+      "number": 6,
+      "question": "A parliament is a collective noun for a group of which type of animal?",
+      "answer": "Owls",
+      "options": ["Crows", "Ravens"]
+    },
+    {
+      "number": 7,
+      "question": "How many days are in February during a leap year?",
+      "answer": "29",
+      "options": ["28", "30"]
+    },
+    {
+      "number": 8,
+      "question": "What is the medical term for a heart rate that is slower than normal?",
+      "answer": "Bradycardia",
+      "options": ["Tachycardia", "Arrhythmia"]
+    },
+    {
+      "number": 9,
+      "question": "What is Wednesday Addams' middle name?",
+      "answer": "Friday",
+      "options": ["Monday", "January"]
+    },
+    {
+      "number": 10,
+      "question": "What is the tallest mountain in the world above sea level?",
+      "answer": "Mount Everest",
+      "options": ["K2", "Mount Kilimanjaro"]
+    },
+    {
+      "number": 11,
+      "question": "Which sea is located to the west of India?",
+      "answer": "Arabian Sea",
+      "options": ["Bay of Bengal", "Pacific Ocean"]
+    },
+    {
+      "number": 12,
+      "question": "Who is currently considered the number one ranked pound-for-pound American boxer?",
+      "answer": "Terence Crawford",
+      "options": ["Canelo Alvarez", "Gervonta Davis"]
+    },
+    {
+      "number": 13,
+      "question": "An Impala is a variety of what type of animal?",
+      "answer": "Antelope",
+      "options": ["Deer", "Gazelle"]
+    },
+    {
+      "number": 14,
+      "question": "What type of vehicle is raced in the 'Iron Dog' race?",
+      "answer": "Snowmobiles",
+      "options": ["Dogsleds", "ATVs"]
+    },
+    {
+      "number": 15,
+      "question": "How many checkers does a Backgammon player start with?",
+      "answer": "15",
+      "options": ["12", "16"]
+    },
+    {
+      "number": 16,
+      "question": "What prop can be found hidden in almost every scene of the movie 'Fight Club'?",
+      "answer": "Starbucks cup",
+      "options": ["Soap bar", "Red tie"]
+    },
+    {
+      "number": 17,
+      "question": "What is the capital of El Salvador?",
+      "answer": "San Salvador",
+      "options": ["San Jose", "Santa Ana"]
+    },
+    {
+      "number": 18,
+      "question": "The Beatles took their name inspiration from which Buddy Holly-backed band?",
+      "answer": "The Crickets",
+      "options": ["The Scorpions", "The Beetles"]
+    },
+    {
+      "number": 19,
+      "question": "According to the song 'Grandma Got Run Over by a Reindeer', where was she walking home from?",
+      "answer": "Our house",
+      "options": ["The store", "Church"]
+    },
+    {
+      "number": 20,
+      "question": "Who was the first official Roman Emperor?",
+      "answer": "Augustus Caesar",
+      "options": ["Julius Caesar", "Nero"]
+    },
+    {
+      "number": 21,
+      "question": "What is the name of Jesse's horse in the movie 'Toy Story 2'?",
+      "answer": "Bullseye",
+      "options": ["Lucky", "Star"]
+    },
+    {
+      "number": 22,
+      "question": "The word 'ketchup' is believed to have originated from which language?",
+      "answer": "Chinese",
+      "options": ["German", "Italian"]
+    },
+    {
+      "number": 23,
+      "question": "What is the term for a word that is derived from the sound it makes?",
+      "answer": "Onomatopoeia",
+      "options": ["Alliteration", "Oxymoron"]
+    },
+    {
+      "number": 24,
+      "question": "What body of water separates the United Kingdom from France?",
+      "answer": "The English Channel",
+      "options": ["The Drake Passage", "The North Sea"]
+    },
+    {
+      "number": 25,
+      "question": "Which country won the very first FIFA World Cup in 1930?",
+      "answer": "Uruguay",
+      "options": ["Brazil", "Argentina"]
+    },
+    {
+      "number": 26,
+      "question": "In the animated show 'Futurama', what is the name of Fry’s delivery company?",
+      "answer": "Planet Express",
+      "options": ["Galaxy Mail", "Interstellar Post"]
+    },
+    {
+      "number": 27,
+      "question": "The three founders of YouTube all met while working for which tech company?",
+      "answer": "PayPal",
+      "options": ["Yahoo", "Google"]
+    },
+    {
+      "number": 28,
+      "question": "In pickleball, what does the acronym 'ATP' stand for?",
+      "answer": "Around the Post",
+      "options": ["Advanced Tournament Play", "At the Point"]
+    },
+    {
+      "number": 29,
+      "question": "What is the name for the 'big toe' in medical terminology?",
+      "answer": "Hallux",
+      "options": ["Pollex", "Phalanx"]
+    },
+    {
+      "number": 30,
+      "question": "What does the tech acronym HTTP stand for?",
+      "answer": "Hypertext Transfer Protocol",
+      "options": ["Hypertext Telephonic Protocol", "High Tension Transfer Process"]
+    },
+    {
+      "number": 31,
+      "question": "On the human skeleton, where is the sciatic notch located?",
+      "answer": "Pelvis",
+      "options": ["Clavicle", "Femur"]
+    },
+    {
+      "number": 32,
+      "question": "In which U.S. state does the federal government own the highest percentage of land?",
+      "answer": "Nevada",
+      "options": ["Alaska", "Utah"]
+    },
+    {
+      "number": 33,
+      "question": "The Eiffel Tower was originally intended to be built in which city?",
+      "answer": "Barcelona",
+      "options": ["London", "Rome"]
+    },
+    {
+      "number": 34,
+      "question": "In 'The Notebook', what is the name of the main female character played by Rachel McAdams?",
+      "answer": "Allie Hamilton",
+      "options": ["Rose Dawson", "Daisy Buchanan"]
+    },
+    {
+      "number": 35,
+      "question": "The Danube River flows through which of these European countries?",
+      "answer": "Hungary",
+      "options": ["France", "Poland"]
+    },
+    {
+      "number": 36,
+      "question": "Which progressive metal band released their first full-length studio album titled 'Undertow'?",
+      "answer": "Tool",
+      "options": ["Dream Theater", "Nine Inch Nails"]
+    },
+    {
+      "number": 37,
+      "question": "In which U.S. state does the movie 'A Christmas Story' take place?",
+      "answer": "Indiana",
+      "options": ["Ohio", "Pennsylvania"]
+    },
+    {
+      "number": 38,
+      "question": "Which city is famously known as 'The Eternal City'?",
+      "answer": "Rome",
+      "options": ["Paris", "Athens"]
+    },
+    {
+      "number": 39,
+      "question": "Acadia National Park is located in which U.S. state?",
+      "answer": "Maine",
+      "options": ["California", "Oregon"]
+    },
+    {
+      "number": 40,
+      "question": "Where on their bodies do sea otters have a pouch to store extra food?",
+      "answer": "Armpits",
+      "options": ["Cheeks", "Tails"]
+    },
+    {
+      "number": 41,
+      "question": "What is the last 'solo' letter on the right side of a standard QWERTY keyboard bottom row?",
+      "answer": "M",
+      "options": ["Z", "N"]
+    },
+    {
+      "number": 42,
+      "question": "Which city is located next to the two richest counties in the U.S.?",
+      "answer": "Washington D.C.",
+      "options": ["San Francisco", "Los Angeles"]
+    },
+    {
+      "number": 43,
+      "question": "How many teaspoons are in one standard U.S. cup?",
+      "answer": "48",
+      "options": ["16", "24"]
+    },
+    {
+      "number": 44,
+      "question": "Who was the first U.S. President to be sworn in using his nickname?",
+      "answer": "Jimmy Carter",
+      "options": ["Teddy Roosevelt", "JFK"]
+    },
+    {
+      "number": 45,
+      "question": "According to NASA, what is the most abundant greenhouse gas in Earth's atmosphere?",
+      "answer": "Water vapor",
+      "options": ["Carbon dioxide", "Methane"]
+    },
+    {
+      "number": 46,
+      "question": "What was the birth name of the American rapper Tupac Shakur?",
+      "answer": "Lesane Parish Crooks",
+      "options": ["Christopher Wallace", "Shawn Carter"]
+    },
+    {
+      "number": 47,
+      "question": "Which religion's sacred writings are divided into the 'Tripitaka'?",
+      "answer": "Buddhism",
+      "options": ["Hinduism", "Islam"]
+    },
+    {
+      "number": 48,
+      "question": "What is the name of the dog in the movie 'The Sandlot'?",
+      "answer": "The Beast",
+      "options": ["Hercules", "Max"]
+    },
+    {
+      "number": 49,
+      "question": "Which U.S. state features the Union Jack on its state flag?",
+      "answer": "Hawaii",
+      "options": ["Massachusetts", "Virginia"]
+    },
+    {
+      "number": 50,
+      "question": "What is the name of the professional football team coached by Ted Lasso?",
+      "answer": "AFC Richmond",
+      "options": ["The Rockets", "The Lions"]
+    },
+    {
+      "number": 51,
+      "question": "Where was Martin Luther King Jr. born?",
+      "answer": "Atlanta",
+      "options": ["Birmingham", "Montgomery"]
+    },
+    {
+      "number": 52,
+      "question": "What popular dessert's name stems from the French word for 'froth'?",
+      "answer": "Mousse",
+      "options": ["Crème Brûlée", "Soufflé"]
+    },
+    {
+      "number": 53,
+      "question": "What is the only species of snake known to build its own nest?",
+      "answer": "King Cobra",
+      "options": ["Python", "Rattlesnake"]
+    },
+    {
+      "number": 54,
+      "question": "Which film won the 'Big Five' Academy Awards?",
+      "answer": "The Silence of the Lambs",
+      "options": ["Titanic", "Lord of the Rings"]
+    },
+    {
+      "number": 55,
+      "question": "What was the very first DVD sent by Netflix in 1998?",
+      "answer": "Beetlejuice",
+      "options": ["The Nightmare Before Christmas", "Batman"]
+    },
+    {
+      "number": 56,
+      "question": "In which country is the Han River located?",
+      "answer": "South Korea",
+      "options": ["Vietnam", "Japan"]
+    },
+    {
+      "number": 57,
+      "question": "Who won the Top R&B Male Artist at the Billboard Music Awards in 2018?",
+      "answer": "Bruno Mars",
+      "options": ["The Weeknd", "Drake"]
+    },
+    {
+      "number": 58,
+      "question": "How many chemical elements are currently listed on the periodic table?",
+      "answer": "118",
+      "options": ["102", "115"]
+    },
+    {
+      "number": 59,
+      "question": "Which fictional author's works reportedly outsold the Bible in 2022?",
+      "answer": "Colleen Hoover",
+      "options": ["Suzanne Collins", "J.K. Rowling"]
+    },
+    {
+      "number": 60,
+      "question": "What is the name of the 'Addams Family' cousin known for being covered entirely in hair?",
+      "answer": "Cousin Itt",
+      "options": ["Cousin George", "Cousin Mike"]
+    },
+    {
+      "number": 61,
+      "question": "What is the scientific study of everything in the universe beyond Earth's atmosphere?",
+      "answer": "Astronomy",
+      "options": ["Astrology", "Cosmetology"]
     }
   ]
 }

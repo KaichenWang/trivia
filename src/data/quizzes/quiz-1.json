@@ -3,19 +3,802 @@
   "title": "Quiz 1",
   "questions": [
     {
+      "number": 1,
       "question": "What is the name for undesirable animals that are harmful?",
       "answer": "Vermin",
-      "options": ["Vultures", "Vipers", "Vermin", "Vagrants"]
+      "options": ["Vultures", "Vipers"]
     },
     {
-      "question": "Which planet is known as the Red Planet?",
-      "answer": "Mars",
-      "options": ["Earth", "Mars", "Venus", "Saturn"]
+      "number": 2,
+      "question": "What was the longest war in US history?",
+      "answer": "Afghanistan",
+      "options": ["Vietnam War", "Civil War"]
     },
     {
-      "question": "Which ocean is the largest on Earth?",
-      "answer": "Pacific Ocean",
-      "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"]
+      "number": 3,
+      "question": "When doing laundry, what does the triangle with an X symbol mean?",
+      "answer": "No bleach",
+      "options": ["No tumble dry", "Hand wash only"]
+    },
+    {
+      "number": 4,
+      "question": "What phone company produced the 3310?",
+      "answer": "Nokia",
+      "options": ["Motorola", "Ericsson"]
+    },
+    {
+      "number": 5,
+      "question": "Traditionally made with goat, what rich Mexican stew is now often made with beef and served with broth for dipping?",
+      "answer": "Birria",
+      "options": ["Pozole", "Menudo"]
+    },
+    {
+      "number": 6,
+      "question": "In human anatomy, what major part of the large intestine is responsible for absorbing water and preparing waste for elimination?",
+      "answer": "Colon",
+      "options": ["Duodenum", "Rectum"]
+    },
+    {
+      "number": 7,
+      "question": "Who famously crossed the Alps with elephants on the way to war?",
+      "answer": "Hannibal",
+      "options": ["Julius Caesar", "Alexander the Great"]
+    },
+    {
+      "number": 8,
+      "question": "What animal sleeps standing up and cannot vomit?",
+      "answer": "Horse",
+      "options": ["Elephant", "Giraffe"]
+    },
+    {
+      "number": 9,
+      "question": "Hg is the chemical symbol for what element?",
+      "answer": "Mercury",
+      "options": ["Hydrogen", "Helium"]
+    },
+    {
+      "number": 10,
+      "question": "What is the remote interior region of Australia called?",
+      "answer": "The Outback",
+      "options": ["The Bush", "The Nullarbor"]
+    },
+    {
+      "number": 11,
+      "question": "Who sings 'Baby One More Time'?",
+      "answer": "Britney Spears",
+      "options": ["Christina Aguilera", "Mandy Moore"]
+    },
+    {
+      "number": 12,
+      "question": "What is the only US state that begins with the letter H?",
+      "answer": "Hawaii",
+      "options": ["Hampshire", "Houston"]
+    },
+    {
+      "number": 13,
+      "question": "What are two circles with the same center called?",
+      "answer": "Concentric",
+      "options": ["Symmetrical", "Parallel"]
+    },
+    {
+      "number": 14,
+      "question": "What is the unit of measurement for power?",
+      "answer": "Watt",
+      "options": ["Joule", "Ampere"]
+    },
+    {
+      "number": 15,
+      "question": "What is the only mammal with a shell?",
+      "answer": "Armadillo",
+      "options": ["Pangolin", "Platypus"]
+    },
+    {
+      "number": 16,
+      "question": "Who created calculus?",
+      "answer": "Newton",
+      "options": ["Einstein", "Galileo"]
+    },
+    {
+      "number": 17,
+      "question": "Operation Overlord was the code name for what Allied invasion?",
+      "answer": "D-Day (Normandy)",
+      "options": ["Battle of the Bulge", "Invasion of Sicily"]
+    },
+    {
+      "number": 18,
+      "question": "What brand makes the Wham-O?",
+      "answer": "Wham-O",
+      "options": ["Mattel", "Hasbro"]
+    },
+    {
+      "number": 19,
+      "question": "Which ACC school has produced three out of the past seven number one overall picks in the NBA draft?",
+      "answer": "Duke",
+      "options": ["North Carolina", "Virginia"]
+    },
+    {
+      "number": 20,
+      "question": "What are armored medieval gloves called?",
+      "answer": "Gauntlets",
+      "options": ["Greaves", "Pauldrons"]
+    },
+    {
+      "number": 21,
+      "question": "Which country's cities of Verona and Venice are featured in Shakespeare's work?",
+      "answer": "Italy",
+      "options": ["Greece", "France"]
+    },
+    {
+      "number": 22,
+      "question": "Which horoscope sign has a crab?",
+      "answer": "Cancer",
+      "options": ["Scorpio", "Pisces"]
+    },
+    {
+      "number": 23,
+      "question": "In the game show Wheel of Fortune, what can you buy?",
+      "answer": "Vowels",
+      "options": ["Consonants", "Extra spins"]
+    },
+    {
+      "number": 24,
+      "question": "How many weeks are in a year?",
+      "answer": "52",
+      "options": ["48", "50"]
+    },
+    {
+      "number": 25,
+      "question": "What fast food restaurant uses a bell as its logo?",
+      "answer": "Taco Bell",
+      "options": ["Arby's", "Chick-fil-A"]
+    },
+    {
+      "number": 26,
+      "question": "What is the name of a substance or agent that can cause cancer?",
+      "answer": "Carcinogen",
+      "options": ["Pathogen", "Mutagen"]
+    },
+    {
+      "number": 27,
+      "question": "How many Ivy League schools are there?",
+      "answer": "8",
+      "options": ["7", "10"]
+    },
+    {
+      "number": 28,
+      "question": "The first DVD sent by Netflix was a Tim Burton classic starring Michael Keaton. What was it?",
+      "answer": "Beetlejuice",
+      "options": ["Batman", "Edward Scissorhands"]
+    },
+    {
+      "number": 29,
+      "question": "What is the capital of El Salvador?",
+      "answer": "San Salvador",
+      "options": ["San Jose", "Santiago"]
+    },
+    {
+      "number": 30,
+      "question": "What is the name of the major veins in the neck that carry blood?",
+      "answer": "Jugular",
+      "options": ["Carotid", "Femoral"]
+    },
+    {
+      "number": 31,
+      "question": "This Yiddish-derived English word describes someone who is clumsy or awkward. What is it?",
+      "answer": "Klutz",
+      "options": ["Schlep", "Mensch"]
+    },
+    {
+      "number": 32,
+      "question": "This 1897 Bram Stoker novel introduced the world to the most famous vampire in literature. Who is that vampire?",
+      "answer": "Dracula",
+      "options": ["Nosferatu", "Lestat"]
+    },
+    {
+      "number": 33,
+      "question": "Which YouTube group rose to fame with trick shot videos?",
+      "answer": "Dude Perfect",
+      "options": ["MrBeast", "Sidemen"]
+    },
+    {
+      "number": 34,
+      "question": "What time zone is Southern Idaho in?",
+      "answer": "Mountain",
+      "options": ["Pacific", "Central"]
+    },
+    {
+      "number": 35,
+      "question": "Which singer is known as the Queen of Soul?",
+      "answer": "Aretha Franklin",
+      "options": ["Diana Ross", "Tina Turner"]
+    },
+    {
+      "number": 36,
+      "question": "What kind of pillows are decorative pillows on a couch or bed called?",
+      "answer": "Throw pillows",
+      "options": ["Bolster pillows", "Sham pillows"]
+    },
+    {
+      "number": 37,
+      "question": "Which famous actor is honored in a statue in Leicester Square, London?",
+      "answer": "Charlie Chaplin",
+      "options": ["Laurence Olivier", "Buster Keaton"]
+    },
+    {
+      "number": 38,
+      "question": "What is the name of the stick with which the ball is hit when playing polo?",
+      "answer": "Mallet",
+      "options": ["Cue", "Club"]
+    },
+    {
+      "number": 39,
+      "question": "Which Asian country flag features red, blue, and yellow with a soyombo symbol?",
+      "answer": "Mongolia",
+      "options": ["Vietnam", "Cambodia"]
+    },
+    {
+      "number": 40,
+      "question": "What is the title given to the prayer leader of a mosque within the Islamic faith?",
+      "answer": "Imam",
+      "options": ["Mufti", "Sheikh"]
+    },
+    {
+      "number": 41,
+      "question": "Gangster Al Capone was convicted and sentenced for what crime?",
+      "answer": "Tax evasion",
+      "options": ["Murder", "Bootlegging"]
+    },
+    {
+      "number": 42,
+      "question": "What bird of prey is known for incredible eyesight and is considered the fastest animal?",
+      "answer": "Peregrine falcon",
+      "options": ["Golden eagle", "Red-tailed hawk"]
+    },
+    {
+      "number": 43,
+      "question": "What cut of beef comes from the shoulder area of the cow?",
+      "answer": "Chuck",
+      "options": ["Sirloin", "Brisket"]
+    },
+    {
+      "number": 44,
+      "question": "What boy king's tomb became world famous?",
+      "answer": "Tutankhamun",
+      "options": ["Ramses II", "Akhenaten"]
+    },
+    {
+      "number": 45,
+      "question": "Famous for eerie entrances and the Tombstone Piledriver, what WWE legend became one of the most iconic figures in wrestling history?",
+      "answer": "The Undertaker",
+      "options": ["Kane", "Stone Cold Steve Austin"]
+    },
+    {
+      "number": 46,
+      "question": "What is the primary ingredient in the sweet liqueur maraschino?",
+      "answer": "Cherries",
+      "options": ["Almonds", "Peaches"]
+    },
+    {
+      "number": 47,
+      "question": "If a patient comes into the hospital with no identification, what does their name become?",
+      "answer": "John Doe",
+      "options": ["Jack Black", "Joe Smith"]
+    },
+    {
+      "number": 48,
+      "question": "In a hospital, what is the shallow pan used for bedridden patients called?",
+      "answer": "Bedpan",
+      "options": ["Urinal", "Basin"]
+    },
+    {
+      "number": 49,
+      "question": "This ghostly monarch is best known for haunting Luigi's Mansion. What is its name?",
+      "answer": "King Boo",
+      "options": ["Bowser", "Dry Bones"]
+    },
+    {
+      "number": 50,
+      "question": "What Creedence Clearwater Revival song peaked at number two on the Billboard charts in 1969 and warns that trouble is on the way?",
+      "answer": "Bad Moon Rising",
+      "options": ["Fortunate Son", "Have You Ever Seen the Rain"]
+    },
+    {
+      "number": 51,
+      "question": "What country has a flag with three horizontal stripes of green, yellow, and blue?",
+      "answer": "Gabon",
+      "options": ["Rwanda", "Sierra Leone"]
+    },
+    {
+      "number": 52,
+      "question": "As president of the Second Continental Congress, who was the first to sign the US Declaration of Independence?",
+      "answer": "John Hancock",
+      "options": ["Thomas Jefferson", "Benjamin Franklin"]
+    },
+    {
+      "number": 53,
+      "question": "In golf, what casual term refers to a very short putt that opponents agree to concede?",
+      "answer": "Gimme",
+      "options": ["Mulligan", "Birdie"]
+    },
+    {
+      "number": 54,
+      "question": "What is the name of this flat, round brimless hat?",
+      "answer": "Beret",
+      "options": ["Beanie", "Fedora"]
+    },
+    {
+      "number": 55,
+      "question": "What Disney film was the studio's first full-length animated feature?",
+      "answer": "Snow White and the Seven Dwarfs",
+      "options": ["Pinocchio", "Fantasia"]
+    },
+    {
+      "number": 56,
+      "question": "'Busy as a bee' is an example of what literary device?",
+      "answer": "Simile",
+      "options": ["Metaphor", "Alliteration"]
+    },
+    {
+      "number": 57,
+      "question": "What medical device is used to restore a normal heartbeat by delivering an electric shock?",
+      "answer": "Defibrillator",
+      "options": ["Pacemaker", "Ventilator"]
+    },
+    {
+      "number": 58,
+      "question": "What was Helen Keller's occupation?",
+      "answer": "Writer",
+      "options": ["Painter", "Scientist"]
+    },
+    {
+      "number": 59,
+      "question": "What is the name for a substance that counteracts the effects of poison?",
+      "answer": "Antidote",
+      "options": ["Antibiotic", "Antiseptic"]
+    },
+    {
+      "number": 60,
+      "question": "What US city's flag features a circular sun symbol on a blue and white background?",
+      "answer": "Denver",
+      "options": ["Phoenix", "Albuquerque"]
+    },
+    {
+      "number": 61,
+      "question": "What year did the 21st century start?",
+      "answer": "2001",
+      "options": ["2000", "1999"]
+    },
+    {
+      "number": 62,
+      "question": "What game show features two families competing to name the most popular survey answers?",
+      "answer": "Family Feud",
+      "options": ["Jeopardy!", "The Price Is Right"]
+    },
+    {
+      "number": 63,
+      "question": "Andorra la Vella is the capital of what country?",
+      "answer": "Andorra",
+      "options": ["Monaco", "Luxembourg"]
+    },
+    {
+      "number": 64,
+      "question": "What scientific theory proposes that the Earth revolves around the sun?",
+      "answer": "Heliocentric theory",
+      "options": ["Geocentric theory", "Big Bang theory"]
+    },
+    {
+      "number": 65,
+      "question": "Teal is a shade of what color?",
+      "answer": "Blue-Green",
+      "options": ["Purple", "Yellow"]
+    },
+    {
+      "number": 66,
+      "question": "What MTV series followed a group of strangers living together?",
+      "answer": "The Real World",
+      "options": ["Road Rules", "Jersey Shore"]
+    },
+    {
+      "number": 67,
+      "question": "What is the largest Spanish-speaking city in the world?",
+      "answer": "Mexico City",
+      "options": ["Madrid", "Buenos Aires"]
+    },
+    {
+      "number": 68,
+      "question": "The Olympic event biathlon consists of cross-country skiing and what other activity?",
+      "answer": "Shooting",
+      "options": ["Archery", "Swimming"]
+    },
+    {
+      "number": 69,
+      "question": "What word connects: fly, milk, cup, knife?",
+      "answer": "Butter",
+      "options": ["Bread", "Cheese"]
+    },
+    {
+      "number": 70,
+      "question": "What space shuttle tragically exploded 73 seconds after launching?",
+      "answer": "Challenger",
+      "options": ["Columbia", "Discovery"]
+    },
+    {
+      "number": 71,
+      "question": "In the language of animal sounds, what specific verb describes the noise made by a turkey?",
+      "answer": "Gobble",
+      "options": ["Cluck", "Caw"]
+    },
+    {
+      "number": 72,
+      "question": "What was the name of the peace treaty that ended World War I?",
+      "answer": "Treaty of Versailles",
+      "options": ["Treaty of Ghent", "Treaty of Paris"]
+    },
+    {
+      "number": 73,
+      "question": "In which country is the Chernobyl nuclear plant located?",
+      "answer": "Ukraine",
+      "options": ["Russia", "Belarus"]
+    },
+    {
+      "number": 74,
+      "question": "What European country is famously shaped like a boot?",
+      "answer": "Italy",
+      "options": ["Belarus", "Greece"]
+    },
+    {
+      "number": 75,
+      "question": "The United States Navy Strike Fighter Tactics Instructor Program is more popularly known as what?",
+      "answer": "Top Gun",
+      "options": ["SEAL Team Six", "Blue Angels"]
+    },
+    {
+      "number": 76,
+      "question": "What movie about an alien encounter was the highest-grossing film of its time?",
+      "answer": "E.T.",
+      "options": ["Star Wars", "Close Encounters of the Third Kind"]
+    },
+    {
+      "number": 77,
+      "question": "When ordering a steak, what is the term for a steak that is barely seared and almost raw?",
+      "answer": "Blue",
+      "options": ["Rare", "Pittsburgh"]
+    },
+    {
+      "number": 78,
+      "question": "What coffee chain was named after Captain Ahab's first mate in Moby Dick?",
+      "answer": "Starbucks",
+      "options": ["Peet's", "Caribou"]
+    },
+    {
+      "number": 79,
+      "question": "In 1962, US President Kennedy was shown photographs of Soviet missiles on what island?",
+      "answer": "Cuba",
+      "options": ["Puerto Rico", "Haiti"]
+    },
+    {
+      "number": 80,
+      "question": "What is the strip of land between opposing lanes of traffic called?",
+      "answer": "Median",
+      "options": ["Shoulder", "Curb"]
+    },
+    {
+      "number": 81,
+      "question": "What is the three-word phrase written on MLK Jr.'s gravestone?",
+      "answer": "Free at last",
+      "options": ["I had a dream", "Justice for all"]
+    },
+    {
+      "number": 82,
+      "question": "Known as the 'Hick from French Lick', this Boston Celtics legend won three straight MVP awards. Who is he?",
+      "answer": "Larry Bird",
+      "options": ["Kevin McHale", "Robert Parish"]
+    },
+    {
+      "number": 83,
+      "question": "In 1812, Napoleon and his troops retreated from what Russian city?",
+      "answer": "Moscow",
+      "options": ["Saint Petersburg", "Borodino"]
+    },
+    {
+      "number": 84,
+      "question": "What does Pikachu evolve into?",
+      "answer": "Raichu",
+      "options": ["Pichu", "Zapdos"]
+    },
+    {
+      "number": 85,
+      "question": "What type of tree is famous for its distinctive white bark?",
+      "answer": "Aspen",
+      "options": ["Ash", "Alder"]
+    },
+    {
+      "number": 86,
+      "question": "What is the name of the post-mortem examination to determine cause of death?",
+      "answer": "Autopsy",
+      "options": ["Biopsy", "Dissection"]
+    },
+    {
+      "number": 87,
+      "question": "What is the name of the mythological creature commonly found in gardens?",
+      "answer": "Gnome",
+      "options": ["Troll", "Sprite"]
+    },
+    {
+      "number": 88,
+      "question": "Who was the first woman to be elected as vice president of the United States?",
+      "answer": "Kamala Harris",
+      "options": ["Hillary Clinton", "Sarah Palin"]
+    },
+    {
+      "number": 89,
+      "question": "A taikonaut is an astronaut from which country?",
+      "answer": "China",
+      "options": ["Japan", "Russia"]
+    },
+    {
+      "number": 90,
+      "question": "How many total possible moves are there for an opening move in chess?",
+      "answer": "20",
+      "options": ["16", "24"]
+    },
+    {
+      "number": 91,
+      "question": "What culinary Muppet has real human hands when performing actions?",
+      "answer": "The Swedish Chef",
+      "options": ["Cookie Monster", "Gonzo"]
+    },
+    {
+      "number": 92,
+      "question": "Hyannis, Provincetown, and Falmouth are all towns located on what famous New England vacation peninsula?",
+      "answer": "Cape Cod",
+      "options": ["Martha's Vineyard", "Rhode Island"]
+    },
+    {
+      "number": 93,
+      "question": "Name one of the two countries the region of Patagonia is part of.",
+      "answer": "Argentina",
+      "options": ["Brazil", "Peru"]
+    },
+    {
+      "number": 94,
+      "question": "Which number does the Roman numeral X represent?",
+      "answer": "10",
+      "options": ["5", "50"]
+    },
+    {
+      "number": 95,
+      "question": "What is the common name for dried plums?",
+      "answer": "Prunes",
+      "options": ["Raisins", "Dates"]
+    },
+    {
+      "number": 96,
+      "question": "In Roman mythology, which god of fire and metalwork forged weapons for the gods?",
+      "answer": "Vulcan",
+      "options": ["Mars", "Mercury"]
+    },
+    {
+      "number": 97,
+      "question": "What is the brand name of the foam rubber used in toy weapons?",
+      "answer": "Nerf",
+      "options": ["Super Soaker", "LEGO"]
+    },
+    {
+      "number": 98,
+      "question": "What discount supermarket chain was founded by two German brothers?",
+      "answer": "Aldi",
+      "options": ["Lidl", "Trader Joe's"]
+    },
+    {
+      "number": 99,
+      "question": "Which international strongman competition has had winners including Brian Shaw and Hafthor Bjornsson?",
+      "answer": "World's Strongest Man",
+      "options": ["Arnold Classic", "Ironman"]
+    },
+    {
+      "number": 100,
+      "question": "Sparks, Sky, and Fever are all professional teams from what league?",
+      "answer": "WNBA",
+      "options": ["MLS", "NHL"]
+    },
+    {
+      "number": 101,
+      "question": "When solving an addition problem, what is the name of the answer called?",
+      "answer": "Sum",
+      "options": ["Product", "Difference"]
+    },
+    {
+      "number": 102,
+      "question": "What is the scientific name for the phenomenon of muscle stiffening that occurs after death?",
+      "answer": "Rigor mortis",
+      "options": ["Livor mortis", "Algor mortis"]
+    },
+    {
+      "number": 103,
+      "question": "What is the Egyptian goddess of healing and motherhood who also shares a name with an Islamic terrorist organization?",
+      "answer": "Isis",
+      "options": ["Hathor", "Bastet"]
+    },
+    {
+      "number": 104,
+      "question": "What is the cooking style of eggs that are boiled briefly so the white is set but the yolk is still runny?",
+      "answer": "Soft boiled",
+      "options": ["Poached", "Over easy"]
+    },
+    {
+      "number": 105,
+      "question": "What music venue was designed by Danish architect Jørn Utzon?",
+      "answer": "Sydney Opera House",
+      "options": ["Royal Albert Hall", "Carnegie Hall"]
+    },
+    {
+      "number": 106,
+      "question": "In which Asian country was the game of chess invented?",
+      "answer": "India",
+      "options": ["China", "Persia"]
+    },
+    {
+      "number": 107,
+      "question": "What part of the Earth's atmosphere contains the ozone layer?",
+      "answer": "Stratosphere",
+      "options": ["Troposphere", "Mesosphere"]
+    },
+    {
+      "number": 108,
+      "question": "Once numbered in the billions, over-hunting doomed what North American bird species?",
+      "answer": "Passenger pigeon",
+      "options": ["Dodo bird", "Carolina parakeet"]
+    },
+    {
+      "number": 109,
+      "question": "What 16th-century French astrologer and physician is best known for writing cryptic prophecies?",
+      "answer": "Nostradamus",
+      "options": ["Rasputin", "Paracelsus"]
+    },
+    {
+      "number": 110,
+      "question": "In the iconic theme song from The Fresh Prince of Bel-Air, which Pennsylvania city is mentioned?",
+      "answer": "Philadelphia",
+      "options": ["Pittsburgh", "Allentown"]
+    },
+    {
+      "number": 111,
+      "question": "What island country is made up of 26 atolls in the Indian Ocean?",
+      "answer": "Maldives",
+      "options": ["Seychelles", "Mauritius"]
+    },
+    {
+      "number": 112,
+      "question": "In 1989, what major geopolitical event ended worldwide?",
+      "answer": "The Cold War",
+      "options": ["Vietnam War", "Gulf War"]
+    },
+    {
+      "number": 113,
+      "question": "Name the US state that comes first alphabetically that does not share a starting letter with another state.",
+      "answer": "Delaware",
+      "options": ["Arkansas", "Georgia"]
+    },
+    {
+      "number": 114,
+      "question": "According to internet culture, what makes the perfect partner to a golden retriever boyfriend?",
+      "answer": "Black cat girlfriend",
+      "options": ["Husky energy", "Orange cat girlfriend"]
+    },
+    {
+      "number": 115,
+      "question": "What is the term for when a single company controls an entire market?",
+      "answer": "Monopoly",
+      "options": ["Oligopoly", "Conglomerate"]
+    },
+    {
+      "number": 116,
+      "question": "Name a color on the Norwegian flag.",
+      "answer": "Red",
+      "options": ["Yellow", "Green"]
+    },
+    {
+      "number": 117,
+      "question": "Pure water has a pH of around what number?",
+      "answer": "7",
+      "options": ["0", "14"]
+    },
+    {
+      "number": 118,
+      "question": "What is a natural hot spring that erupts with water and steam called?",
+      "answer": "Geyser",
+      "options": ["Fumarole", "Aquifer"]
+    },
+    {
+      "number": 119,
+      "question": "Where is the only place kangaroos live naturally besides Australia?",
+      "answer": "Papua New Guinea",
+      "options": ["New Zealand", "Indonesia"]
+    },
+    {
+      "number": 120,
+      "question": "What is the capital of Pennsylvania?",
+      "answer": "Harrisburg",
+      "options": ["Philadelphia", "Scranton"]
+    },
+    {
+      "number": 121,
+      "question": "What company made the Walkman?",
+      "answer": "Sony",
+      "options": ["Panasonic", "Toshiba"]
+    },
+    {
+      "number": 122,
+      "question": "Research suggests that people of what hair color often require more anesthesia?",
+      "answer": "Red",
+      "options": ["Blonde", "Black"]
+    },
+    {
+      "number": 123,
+      "question": "How many sides are unequal on a standard isosceles triangle?",
+      "answer": "1",
+      "options": ["0", "3"]
+    },
+    {
+      "number": 124,
+      "question": "What college has the largest number of students in Texas?",
+      "answer": "Texas A&M",
+      "options": ["UT Austin", "University of Houston"]
+    },
+    {
+      "number": 125,
+      "question": "What is the term for a person or company's greenhouse gas output?",
+      "answer": "Carbon footprint",
+      "options": ["Greenhouse index", "Emission scale"]
+    },
+    {
+      "number": 126,
+      "question": "Which continent has the Yellow Sea?",
+      "answer": "Asia",
+      "options": ["Europe", "Africa"]
+    },
+    {
+      "number": 127,
+      "question": "Troy Bolton and what female character are the main characters of High School Musical?",
+      "answer": "Gabriella",
+      "options": ["Sharpay", "Taylor"]
+    },
+    {
+      "number": 128,
+      "question": "Which Republican US senator from Kentucky is nicknamed 'Grandpa'?",
+      "answer": "Mitch McConnell",
+      "options": ["Rand Paul", "Thomas Massie"]
+    },
+    {
+      "number": 129,
+      "question": "This American poet penned 'O Captain! My Captain!' and the collection 'Leaves of Grass'. Who is he?",
+      "answer": "Walt Whitman",
+      "options": ["Robert Frost", "Ralph Waldo Emerson"]
+    },
+    {
+      "number": 130,
+      "question": "What is the most populated city in the world that starts with the letter B?",
+      "answer": "Beijing",
+      "options": ["Bangkok", "Berlin"]
+    },
+    {
+      "number": 131,
+      "question": "What ancient empire did Julius Caesar rule?",
+      "answer": "Rome",
+      "options": ["Greece", "Egypt"]
+    },
+    {
+      "number": 132,
+      "question": "Name one of the seven dwarfs whose name does not end in Y.",
+      "answer": "Bashful",
+      "options": ["Sleepy", "Grumpy"]
+    },
+    {
+      "number": 133,
+      "question": "Which city in central China was the site of the initial COVID-19 outbreak?",
+      "answer": "Wuhan",
+      "options": ["Shanghai", "Guangzhou"]
     }
   ]
 }
