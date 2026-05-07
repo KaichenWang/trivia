@@ -38,33 +38,31 @@ function QuizPage() {
     setCompletedResult(null)
   }, [quiz])
 
-  useEffect(() => {
-    if (!quiz || savedProgress || !resolvedSavedChoice || isOutOfRange) {
-      return
-    }
-
-    saveQuizProgress(quiz.id, {
-      currentIndex,
-      score,
-      totalQuestions,
-      completed: false,
-    })
-  }, [
-    quiz,
-    currentIndex,
-    score,
-    totalQuestions,
-    savedProgress,
-    resolvedSavedChoice,
-    isOutOfRange,
-  ])
-
   const progressLabel = useMemo(() => {
     if (!quiz || totalQuestions === 0) {
       return ''
     }
     return `Question ${currentIndex + 1} of ${totalQuestions}`
   }, [quiz, totalQuestions, currentIndex])
+
+  const resetQuizState = () => {
+    setSavedProgress(null)
+    setResolvedSavedChoice(true)
+    setScore(0)
+    setCurrentIndex(0)
+    setSelectedOption(null)
+    setShowResult(false)
+    setCompletedResult(null)
+  }
+
+  const restartQuiz = () => {
+    if (!quiz) {
+      return
+    }
+
+    clearQuizProgress(quiz.id)
+    resetQuizState()
+  }
 
   if (!quiz) {
     return (
@@ -90,16 +88,7 @@ function QuizPage() {
           <button
             type="button"
             className="btn"
-            onClick={() => {
-              clearQuizProgress(quiz.id)
-              setSavedProgress(null)
-              setResolvedSavedChoice(true)
-              setScore(0)
-              setCurrentIndex(0)
-              setSelectedOption(null)
-              setShowResult(false)
-              setCompletedResult(null)
-            }}
+            onClick={restartQuiz}
           >
             Restart Quiz
           </button>
@@ -114,16 +103,7 @@ function QuizPage() {
         <ResumePrompt
           progress={savedProgress}
           quizTitle={quiz.title}
-          onRestart={() => {
-            clearQuizProgress(quiz.id)
-            setSavedProgress(null)
-            setResolvedSavedChoice(true)
-            setScore(0)
-            setCurrentIndex(0)
-            setSelectedOption(null)
-            setShowResult(false)
-            setCompletedResult(null)
-          }}
+          onRestart={restartQuiz}
           onResume={() => {
             setScore(savedProgress.score ?? 0)
             setResolvedSavedChoice(true)
@@ -223,16 +203,7 @@ function QuizPage() {
             <button
               type="button"
               className="btn"
-              onClick={() => {
-                clearQuizProgress(quiz.id)
-                setSavedProgress(null)
-                setResolvedSavedChoice(true)
-                setScore(0)
-                setCurrentIndex(0)
-                setSelectedOption(null)
-                setShowResult(false)
-                setCompletedResult(null)
-              }}
+              onClick={restartQuiz}
             >
               Restart Quiz
             </button>
