@@ -7,7 +7,6 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/quiz/:quizId" element={<QuizPage />} />
-      <Route path="/quiz/:quizId/question/:questionIndex" element={<QuizPage />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   )

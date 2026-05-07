@@ -1,32 +1,26 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link, useLocation, useNavigate, useNavigationType, useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import ResumePrompt from '../components/ResumePrompt'
 import { getQuizById } from '../data/quizzes'
 import { clearQuizProgress, getQuizProgress, saveQuizProgress } from '../lib/storage'
 import type { QuizProgress } from '../types/quiz'
 
 function QuizPage() {
-  const { quizId, questionIndex } = useParams()
-  const location = useLocation()
-  const navigate = useNavigate()
-  const navigationType = useNavigationType()
+  const { quizId } = useParams()
   const quiz = getQuizById(quizId)
-  const parsedQuestionNumber = Number(questionIndex ?? 1)
-  const safeQuestionIndex = Number.isInteger(parsedQuestionNumber) ? parsedQuestionNumber - 1 : -1
-  const locationState = location.state as { skipSavedProgress?: boolean; initialScore?: number } | null
-  const shouldCheckSavedProgress = navigationType === 'POP' && !locationState?.skipSavedProgress
 
   const [selectedOption, setSelectedOption] = useState<string | null>(null)
   const [showResult, setShowResult] = useState(false)
   const [score, setScore] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0)
   const [savedProgress, setSavedProgress] = useState<QuizProgress | null>(null)
   const [resolvedSavedChoice, setResolvedSavedChoice] = useState(false)
   const [completedResult, setCompletedResult] = useState<QuizProgress | null>(null)
 
   const totalQuestions = quiz?.questions.length ?? 0
-  const isOutOfRange = safeQuestionIndex < 0 || safeQuestionIndex >= totalQuestions
-  const currentQuestion = quiz?.questions[safeQuestionIndex]
-  const isLastQuestion = safeQuestionIndex === totalQuestions - 1
+  const isOutOfRange = currentIndex < 0 || currentIndex >= totalQuestions
+  const currentQuestion = quiz?.questions[currentIndex]
+  const isLastQuestion = currentIndex === totalQuestions - 1
   const isCorrect = selectedOption === currentQuestion?.answer
 
   useEffect(() => {
@@ -34,23 +28,15 @@ function QuizPage() {
       return
     }
 
-    const progress = shouldCheckSavedProgress ? getQuizProgress(quiz.id) : null
+    const progress = getQuizProgress(quiz.id)
     setSavedProgress(progress)
     setResolvedSavedChoice(!progress)
     setSelectedOption(null)
     setShowResult(false)
-    setScore(locationState?.initialScore ?? 0)
+    setScore(0)
+    setCurrentIndex(0)
     setCompletedResult(null)
-  }, [quiz, shouldCheckSavedProgress, locationState?.initialScore])
-
-  useEffect(() => {
-    if (quiz && !questionIndex && resolvedSavedChoice) {
-      navigate(`/quiz/${quiz.id}/question/1`, {
-        replace: true,
-        state: { skipSavedProgress: true, initialScore: score },
-      })
-    }
-  }, [quiz, questionIndex, resolvedSavedChoice, navigate, score])
+  }, [quiz])
 
   useEffect(() => {
     if (!quiz || savedProgress || !resolvedSavedChoice || isOutOfRange) {
@@ -58,14 +44,14 @@ function QuizPage() {
     }
 
     saveQuizProgress(quiz.id, {
-      currentIndex: safeQuestionIndex,
+      currentIndex,
       score,
       totalQuestions,
       completed: false,
     })
   }, [
     quiz,
-    safeQuestionIndex,
+    currentIndex,
     score,
     totalQuestions,
     savedProgress,
@@ -77,8 +63,8 @@ function QuizPage() {
     if (!quiz || totalQuestions === 0) {
       return ''
     }
-    return `Question ${safeQuestionIndex + 1} of ${totalQuestions}`
-  }, [quiz, totalQuestions, safeQuestionIndex])
+    return `Question ${currentIndex + 1} of ${totalQuestions}`
+  }, [quiz, totalQuestions, currentIndex])
 
   if (!quiz) {
     return (
@@ -109,10 +95,10 @@ function QuizPage() {
               setSavedProgress(null)
               setResolvedSavedChoice(true)
               setScore(0)
-              navigate(`/quiz/${quiz.id}/question/1`, {
-                replace: true,
-                state: { skipSavedProgress: true, initialScore: 0 },
-              })
+              setCurrentIndex(0)
+              setSelectedOption(null)
+              setShowResult(false)
+              setCompletedResult(null)
             }}
           >
             Restart Quiz
@@ -133,18 +119,17 @@ function QuizPage() {
             setSavedProgress(null)
             setResolvedSavedChoice(true)
             setScore(0)
-            navigate(`/quiz/${quiz.id}/question/1`, {
-              replace: true,
-              state: { skipSavedProgress: true, initialScore: 0 },
-            })
+            setCurrentIndex(0)
+            setSelectedOption(null)
+            setShowResult(false)
+            setCompletedResult(null)
           }}
           onResume={() => {
             setScore(savedProgress.score ?? 0)
             setResolvedSavedChoice(true)
-            navigate(`/quiz/${quiz.id}/question/${(savedProgress.currentIndex ?? 0) + 1}`, {
-              replace: true,
-              state: { skipSavedProgress: true, initialScore: savedProgress.score ?? 0 },
-            })
+            setCurrentIndex(savedProgress.currentIndex ?? 0)
+            setSelectedOption(null)
+            setShowResult(false)
           }}
         />
       </main>
@@ -155,14 +140,18 @@ function QuizPage() {
     return (
       <main className="page">
         <div className="card">
-          <h1>Invalid question URL</h1>
-          <Link
-            to={`/quiz/${quiz.id}/question/1`}
-            state={{ skipSavedProgress: true, initialScore: 0 }}
+          <h1>Invalid question state</h1>
+          <button
+            type="button"
             className="btn"
+            onClick={() => {
+              setCurrentIndex(0)
+              setSelectedOption(null)
+              setShowResult(false)
+            }}
           >
             Go to first question
-          </Link>
+          </button>
         </div>
       </main>
     )
@@ -181,7 +170,7 @@ function QuizPage() {
     }
 
     saveQuizProgress(quiz.id, {
-      currentIndex: safeQuestionIndex,
+      currentIndex,
       score: updatedScore,
       totalQuestions,
       completed: false,
@@ -189,11 +178,11 @@ function QuizPage() {
   }
 
   const goNext = () => {
-    const nextIndex = safeQuestionIndex + 1
+    const nextIndex = currentIndex + 1
 
     if (isLastQuestion) {
       const result = {
-        currentIndex: safeQuestionIndex,
+        currentIndex,
         score,
         totalQuestions,
         completed: true,
@@ -211,9 +200,7 @@ function QuizPage() {
     })
     setSelectedOption(null)
     setShowResult(false)
-    navigate(`/quiz/${quiz.id}/question/${nextIndex + 1}`, {
-      state: { skipSavedProgress: true, initialScore: score },
-    })
+    setCurrentIndex(nextIndex)
   }
 
   return (
@@ -241,10 +228,10 @@ function QuizPage() {
                 setSavedProgress(null)
                 setResolvedSavedChoice(true)
                 setScore(0)
-                navigate(`/quiz/${quiz.id}/question/1`, {
-                  replace: true,
-                  state: { skipSavedProgress: true, initialScore: 0 },
-                })
+                setCurrentIndex(0)
+                setSelectedOption(null)
+                setShowResult(false)
+                setCompletedResult(null)
               }}
             >
               Restart Quiz
