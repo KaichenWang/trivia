@@ -209,7 +209,7 @@ function QuizPage() {
         <div className="card-header">
           <h1>{quiz.title}</h1>
           <Link to="/" className="text-link">
-            Back
+            Quit
           </Link>
         </div>
         <p className="muted">{progressLabel}</p>

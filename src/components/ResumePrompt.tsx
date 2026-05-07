@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import type { QuizProgress } from '../types/quiz'
 
 interface ResumePromptProps {
@@ -14,7 +15,12 @@ function ResumePrompt({ progress, quizTitle, onRestart, onResume }: ResumePrompt
 
   return (
     <div className="card">
-      <h2>{quizTitle}</h2>
+      <div className="card-header">
+        <h2>{quizTitle}</h2>
+        <Link to="/" className="text-link">
+          Home
+        </Link>
+      </div>
       <p className="muted">Saved progress found.</p>
       <p>{completionText}</p>
       <div className="actions">
