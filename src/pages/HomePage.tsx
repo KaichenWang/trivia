@@ -23,9 +23,14 @@ function HomePage() {
                   <h2>{quiz.title}</h2>
                   <p className="muted">{status}</p>
                 </div>
-                <Link className="btn" to={`/quiz/${quiz.id}`}>
-                  Open Quiz
-                </Link>
+                <div className="actions">
+                  <Link className="btn" to={`/quiz/${quiz.id}`}>
+                    Open Quiz
+                  </Link>
+                  <Link className="btn secondary" target="_blank" to={`https://www.youtube.com/watch?v=${quiz.id}`}>
+                    YouTube
+                  </Link>
+                </div>
               </li>
             )
           })}
