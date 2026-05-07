@@ -6,8 +6,7 @@ function HomePage() {
   return (
     <main className="page">
       <div className="card">
-        <h1>Quiz Game</h1>
-        <p className="muted">Choose a quiz to begin.</p>
+        <h1>Trivia</h1>
         <ul className="quiz-list">
           {quizzes.map((quiz) => {
             const progress = getQuizProgress(quiz.id)
