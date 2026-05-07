@@ -1,0 +1,24 @@
+Convert this text file's content into a multiple choice question and answers trivia data
+
+Exclude questions that reference a visual image (questions that cannot be answered only by reading the question).
+
+Don't exclude questions with hints, but remove the hint part.
+
+Create 2 options for each question (make the question hard to guess)
+
+Fact check each question and answer to the best of you ability
+
+I want it in JSON format. Example:
+
+{
+  "id": "5IH59-IeTsk",
+  "title": "Quiz 1",
+  "questions": [
+    {
+      "number": 1,
+      "question": "What is the name for undesirable animals that are harmful?",
+      "answer": "Vermin",
+      "options": ["Vultures", "Vipers"]
+    },
+  ]
+}
