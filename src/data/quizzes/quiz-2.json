@@ -1,0 +1,21 @@
+{
+  "id": "Q8m2-nA71pL",
+  "title": "Quiz 2",
+  "questions": [
+    {
+      "question": "What is the capital of Japan?",
+      "answer": "Tokyo",
+      "options": ["Seoul", "Tokyo", "Osaka", "Kyoto"]
+    },
+    {
+      "question": "Which language runs in a web browser?",
+      "answer": "JavaScript",
+      "options": ["Python", "C++", "JavaScript", "Go"]
+    },
+    {
+      "question": "How many minutes are in two hours?",
+      "answer": "120",
+      "options": ["60", "90", "120", "180"]
+    }
+  ]
+}

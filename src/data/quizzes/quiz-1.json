@@ -1,0 +1,21 @@
+{
+  "id": "5IH59-IeTsk",
+  "title": "Quiz 1",
+  "questions": [
+    {
+      "question": "What is the name for undesirable animals that are harmful?",
+      "answer": "Vermin",
+      "options": ["Vultures", "Vipers", "Vermin", "Vagrants"]
+    },
+    {
+      "question": "Which planet is known as the Red Planet?",
+      "answer": "Mars",
+      "options": ["Earth", "Mars", "Venus", "Saturn"]
+    },
+    {
+      "question": "Which ocean is the largest on Earth?",
+      "answer": "Pacific Ocean",
+      "options": ["Atlantic Ocean", "Indian Ocean", "Pacific Ocean", "Arctic Ocean"]
+    }
+  ]
+}

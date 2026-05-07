@@ -1,0 +1,157 @@
+:root {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    sans-serif;
+  color: #111827;
+  background: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 720px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.score {
+  font-weight: 600;
+}
+
+.quiz-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.quiz-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.options {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.option {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0.85rem;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.option:hover:not(:disabled) {
+  border-color: #9ca3af;
+}
+
+.option.selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.result {
+  border-radius: 10px;
+  padding: 0.9rem;
+  border: 1px solid #d1d5db;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.result.correct {
+  background: #ecfdf5;
+  border-color: #6ee7b7;
+}
+
+.result.wrong {
+  background: #fef2f2;
+  border-color: #fca5a5;
+}
+
+.result.done {
+  background: #f9fafb;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  border: 1px solid #111827;
+  background: #111827;
+  color: #ffffff;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btn.secondary {
+  background: #ffffff;
+  color: #111827;
+}
+
+.text-link {
+  color: #2563eb;
+  text-decoration: none;
+}
