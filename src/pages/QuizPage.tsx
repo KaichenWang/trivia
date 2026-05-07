@@ -5,6 +5,15 @@ import { getQuizById } from '../data/quizzes'
 import { clearQuizProgress, getQuizProgress, saveQuizProgress } from '../lib/storage'
 import type { QuizProgress } from '../types/quiz'
 
+const shuffleArray = <T,>(items: T[]) => {
+  const shuffled = [...items]
+  for (let i = shuffled.length - 1; i > 0; i -= 1) {
+    const swapIndex = Math.floor(Math.random() * (i + 1))
+    ;[shuffled[i], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[i]]
+  }
+  return shuffled
+}
+
 function QuizPage() {
   const { quizId } = useParams()
   const quiz = getQuizById(quizId)
@@ -44,6 +53,15 @@ function QuizPage() {
     }
     return `Question ${currentIndex + 1} of ${totalQuestions}`
   }, [quiz, totalQuestions, currentIndex])
+
+  const displayOptions = useMemo(() => {
+    if (!currentQuestion) {
+      return []
+    }
+
+    const combinedOptions = Array.from(new Set([...currentQuestion.options, currentQuestion.answer]))
+    return shuffleArray(combinedOptions)
+  }, [currentQuestion])
 
   const resetQuizState = () => {
     setSavedProgress(null)
@@ -212,7 +230,7 @@ function QuizPage() {
           <>
             <h2>{currentQuestion?.question}</h2>
             <div className="options">
-              {currentQuestion?.options.map((option) => (
+              {displayOptions.map((option) => (
                 <button
                   key={option}
                   type="button"
